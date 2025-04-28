@@ -1,0 +1,295 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  .body{
+    display: flex;
+    
+   
+}
+.bodyDiv{
+    display: flex;
+    margin: 0%;
+    background-image: url("backgroundLrg.jpg");
+    /*width:fit-content;*/
+    /*background-repeat: no-repeat;
+    width:100vW;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*height: auto;*/
+    width:100%;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    flex-direction: column;
+    
+}
+  
+  .clear {
+      clear: both;
+  }
+.headerN{
+ 
+    width: 100vw;
+    height: 90px;
+    /*max-width: fit-content;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    
+    border: 1px solid black;
+}
+.nava{
+    display: block;
+    padding: 0 32px;
+    background-color: rgb(255, 255, 255);
+    width: 1920px;
+    width: 80%;
+    height: 90px;
+    /*max-width: fit-content;*/
+    display:inline-block;
+    /*align-items: center;*/
+    /*justify-content: center;
+    margin-left: auto;
+    margin-right:auto;*/
+    
+    border: 1px solid black;
+}
+.button{
+    font-size: 20px;
+    font-style: bold;
+    color:blue;
+    border:white;
+    background-color: white;
+    /*box-shadow: 1px 1px 2px rgb(16, 16, 16);*/
+    /*filter: drop-shadow(0 0 0.75rem crimson);*/
+    /*filter: drop-shadow(30px 10px 4px #4444dd);*/
+    
+}
+button:hover{
+    cursor: pointer;
+    color:orange;
+}
+.emb{
+    filter: drop-shadow(9px 9px 4px #0980C1);
+}
+.nlogo{
+    width:100px;
+    height: 90px;
+    float: left;
+    border: 1px solid black;
+}
+.nHome{
+    width:100px;
+    height: 90px;
+    float: left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.nContact{
+    width:100px;
+    height: 90px;
+    float: left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.nAccount{
+    width:100px;
+    height: 90px;
+    /*float: right;*/
+    margin-left: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+/*-----------------------Dropdown menu Need to practice more-----------------------------------------------*/
+                    .nAccount {
+                        position: relative;
+                    }
+
+                    .dropdown {
+                        display: none; /* Hidden by default */
+                        position: absolute;
+                        top: 100%; /* Position the dropdown below the button */
+                        right: 0;
+                        /*background-color: rgba(0,0,0,0);*/
+                        background-color: white;
+                        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                        width: 150px; /* Adjust the width as necessary */
+                        border-radius: 4px;
+                        z-index: 100;
+                    }
+
+                    .dropdown ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .dropdown li {
+                        border-bottom: 1px solid #ddd;
+                    }
+
+                    .dropdown li a {
+                        text-decoration: none;
+                        color: black;
+                        padding: 10px;
+                        display: flex;
+                    }
+
+                    .dropdown li a:hover {
+                        color:#C14A09;
+                        background-color: #f1f1f1;
+                    }
+/*Extra edit for styling dropdown menu*/
+                    .dropdown li a{
+                        
+                        color:#0980C1;
+                    }
+                    .aLast{
+                        font-size: 15px;
+                        padding-right: 5px;
+                    }
+
+
+
+/*--------------------------------------End Dropdown Menu----------------------------------------------------*/
+.mainN{
+    /*width: 1920px;*/
+    width:100vw;
+    height: 960px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    margin-left: auto;
+    margin-right:auto;
+    /*background-image: url("background.png");*/
+    border: 1px solid black;
+}
+/*.listBox{
+    justify-content: center;
+}
+ol li{
+    list-style: none;
+    text-align: justify;
+}*/
+.mainSection{
+    display: flex;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+.leftCol{
+    width:998px;
+    width:65%;
+    height:100%;
+    
+    margin-left: auto;
+    margin-right: 0;
+    
+    border: 1px solid black;
+}
+.introDiv{
+    width: 600px;
+    margin-left:10px;
+    margin-right: 10px;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px #054568);
+    border: 1px solid red;
+}
+.introH{
+    margin-left: 10px;
+    margin-top:45px;
+    font-family: fangsong;/* Helvetica, sans-serif;*/
+    color:white;
+}
+.introSpan{
+    margin-left: 20px;
+    font-family: fangsong;/* Helvetica, sans-serif;*/
+    color:white;
+    margin-bottom: 20px;
+}
+.introPdiv{
+    border-radius: 8px;
+    background-color: white;
+}
+.introP{
+    margin-top:40px;
+    margin-left: 10px;
+    
+    font-family: fangsong;/* Helvetica, sans-serif;*/
+    color:#0980C1;
+}
+.introPic1{
+    margin-left: 10px;
+    filter: drop-shadow(2px 4px 5px #054568);
+}
+.rightCol{
+    width:537px;
+    width:35%;
+    height:100%;
+    
+    /*margin-right: auto;*/
+    border: 1px solid black;
+}
+.rightDiv{
+    margin-left: 10px;
+    margin-top:45px;
+    margin-right:20px;
+    padding-right: 20px;
+    font-family: fangsong;/* Helvetica, sans-serif;*/
+    text-indent: 10px;
+    filter: drop-shadow(2px 4px 5px #054568);
+    color:white;
+}
+.rightP{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rightPdiv{
+    display:block;
+    justify-content:center;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.optionPic{
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(4px 8px 9px #054568);
+}
+#content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+  }
