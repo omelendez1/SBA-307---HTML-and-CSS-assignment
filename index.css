@@ -204,8 +204,8 @@ ol li{
     border: 1px solid black;
 }
 .leftCol{
-    width:998px;
-    width:65%;
+    width:920px;
+    width:60%;
     height:100%;
     
     margin-left: auto;
@@ -239,6 +239,7 @@ ol li{
 }
 .introP{
     margin-top:40px;
+    padding-top: 10px;
     margin-left: 10px;
     
     font-family: fangsong;/* Helvetica, sans-serif;*/
@@ -249,8 +250,9 @@ ol li{
     filter: drop-shadow(2px 4px 5px #054568);
 }
 .rightCol{
-    width:537px;
-    width:35%;
+    /*float: left;*/
+    width:610px;
+    width:40%;
     height:100%;
     
     /*margin-right: auto;*/
@@ -272,6 +274,14 @@ ol li{
     margin-right: auto;
 }
 .rightPdiv{
+  /*  fix this its in block make another div then flex
+    justify-content: center;
+    display: flex *
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}*/
     display:block;
     justify-content:center;
     align-items: center;
@@ -292,4 +302,25 @@ ol li{
     border-radius: 5px;
     font-size: 18px;
     color: #333;
+  }
+
+  .mainF{
+    z-index: -1;
+    width: 100vw;
+    height: 90px;
+    /*max-width: fit-content;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    
+    border: 1px solid black;
+  }
+  .mainFdiv{
+    width: 100vw;
+    height:90px;
+    background-color: #C14A09;
+    
+    filter: drop-shadow(0 -3mm 2mm rgb(243, 216, 192));
   }

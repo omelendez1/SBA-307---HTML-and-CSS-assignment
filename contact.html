@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="content=" width="device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+          <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+    }
+
+    .colA, .colB {
+    
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .colA {
+      width: 60%;
+      /*background-color: ;*/
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .content-box {
+      background: white;
+      padding: 20px;
+      width: 400px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .colB {
+      width: 40%;
+      /*background-color: #e2e8f0;*/
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #0980C1;
+      color: white;
+      cursor: pointer;
+    }
+
+    .bookB:hover {
+      background-color: #2b6cb0;
+    }
+    @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0; /* Start transparent */
+  }
+  </style>
+    </style>
+    <style>
+        /*body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f4f8;
+          padding: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }*/
+    
+        .table-container {
+          background: white;
+          padding: 20px 30px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+    
+        h2 {
+          margin-bottom: 20px;
+          color: #2d3748;
+        }
+    
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+    
+        th, td {
+          padding: 12px 16px;
+          border: 1px solid #cbd5e0;
+        }
+    
+        th {
+          background-color: #0980C1;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+    
+        td {
+          background-color: #edf2f7;
+        }
+      </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- device-width,-->
+    <div class="bodyDiv">
+        <div class="headerN">
+            <nav class="nava">
+                <div class="nlogo">
+                    <div class="nlogoPic">
+                        <img class="emb" src="swordEmblem.png" width="100vw" height="auto">
+                    </div>
+                </div>
+                <div class="nHome">
+                    <button class="button nHomeB"><a href="index.html">Home</a></button>
+                </div>
+                <div class="nContact">
+                    <button class="button nContactB"><a href="contact.html">Contact</a></button>
+                </div>
+                <div class="nAccount">
+                    <button class="button nAccountB" onclick="toggleDropdown()"><a href="account.html">Account</a></button>
+                    <div class="dropdown" id="accountDropdown">
+                        <ul class="a100">
+                            <li><a href="#"><img style="width:20px"; src="swordEmblem.png">Log in</a></li>
+                            <li><a href="#"><img style="width:20px"; src="swordEmblem.png">Profile</a></li>
+                            <li><a href="#"><img style="width:20px"; src="swordEmblem.png">Settings</a></li>
+                            <li><a class="aLast" href="#"><img style="width:20px; height:24px;" src="swordEmblem.png">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="mainSec">
+            <div class="container">
+                <div class="colA fade-in">
+                  <div class="content-box">
+                    <h2>Workout Tips</h2>
+                    <img class="bPic" src="back into for apt.png" alt="bContact" width="250px" style="display:'flex' ">
+                    <p>The tips we provide serve as an excellent foundation for pursuing your personal fitness goals. Whether you're preparing for your first powerlifting meet, aiming to cut for a bodybuilding or bikini competition, or simply looking to slim down for summer, everyone's path begins at a different place.
+
+                        To maximize your progress, consider scheduling a one-on-one session. Together, we can craft a mesocycle tailored precisely to your unique objectives.</p>
+                    <p>Stay hydrated, warm up before you lift, and always focus on form over weight.</p>
+                  </div>
+                  <div class="content-box">
+                    <h2>Nutrition Notes</h2>
+                    <p>Protein post-workout is essential. Consider lean meats or plant-based shakes within 30 minutes.</p>
+                    
+                    <h2>Calculate Macros</h2>
+                    <p>Daily Macros Are Calculated By:<br>
+                        Determining Basal Metabolic Rate (BMR)<br>
+                        This is the number of calories your body needs at rest. Common formulas:<br><br>
+                        
+                        Mifflin-St Jeor is widely used:<br>
+                        For men: BMR = (10 × weight in kg) + (6.25 × height in cm) − (5 × age) + 5<br>
+                        For women: BMR = (10 × weight in kg) + (6.25 × height in cm) − (5 × age) − 161<br><br>
+                        
+                        Adjusting for Activity Level<br>
+                        Multiply BMR by an activity multiplier to get TDEE:<br><br>
+                        
+                        Sedentary: ×1.2<br>
+                        Lightly active: ×1.375<br>
+                        Moderately active: ×1.55<br>
+                        Very active: ×1.725<br>
+                        Extra active: ×1.9<br><br>
+                        
+                        Setting a Caloric Goal<br>
+                        For fat loss: TDEE − 10–20%<br>
+                        For maintenance: TDEE<br>
+                        For muscle gain: TDEE + 10–20%<br><br>
+                        
+                        Splitting into Macronutrients<br>
+                        A common macro ratio for general fitness might be:<br>
+                        Carbs: 45–55%<br>
+                        Protein: 25–35%<br>
+                        Fats: 20–30%<br><br>
+                        
+                        Converting Grams from Calories<br>
+                        Carbs: 4 calories per gram<br>
+                        Protein: 4 calories per gram<br>
+                        Fat: 9 calories per gram<br></p>
+
+                    <table border="1" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                        <th>Protein</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>1g=4cal</td>
+                        <td>1g=9cal</td>
+                        <td>1g=4cal</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                  </div>
+                </div>
+            
+                <div class="colB fade-in">
+                  <form>
+                    <h2>Schedule Your Workout</h2>
+                    
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required />
+            
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required />
+            
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required />
+            
+                    <label for="type">Workout Type</label>
+                    <select id="type" name="type">
+                      <option>Cardio</option>
+                      <option>Strength</option>
+                      <option>Yoga</option>
+                      <option>Mobility</option>
+                    </select>
+            
+                    <button class="bookB" type="submit">Book Session</button>
+        </div>
+        
+        <footer class="mainF">
+            <div class="mainFdiv">
+
+            </div>
+        </footer>
+    </div>
+    
+
+    <!--<h1>Hello World!</h1>-->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

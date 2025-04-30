@@ -49,3 +49,4 @@
       contentDiv.innerHTML = "Please select an option from the dropdown above to see the content change.";
     }
   }
+
